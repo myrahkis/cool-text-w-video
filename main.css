@@ -4,7 +4,6 @@ body {
   padding: 0;
   height: 100%;
   background: #000;
-  overflow: hidden;
 }
 .container {
   position: relative;
@@ -40,9 +39,8 @@ video {
 .text-above {
   position: relative;
   color: white;
-  font-size: 5rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   width: 70%;
-  /* text-align: justify; */
   z-index: 3;
   overflow-wrap: anywhere;
   line-height: 1.2;
@@ -63,4 +61,10 @@ video {
 /* да, костыль :( */
 .last {
   float: right;
+}
+
+@media (max-width: 767px) {
+  .text-above {
+    width: 100%;
+  }
 }
