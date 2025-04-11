@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool thing</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <video src="video.mp4" autoplay muted loop></video>
+
+      <!-- маска -->
+      <svg width="0" height="0">
+        <defs>
+          <mask
+            id="mask-of-empty-spaces"
+            maskUnits="objectBoundingBox"
+            maskContentUnits="objectBoundingBox"
+          >
+            <rect x="0" y="0" width="1" height="1" fill="white" />
+            <g id="mask-content"></g>
+          </mask>
+        </defs>
+      </svg>
+
+      <div class="overlay"></div>
+
+      <div class="text-above" id="text">
+        <span class="word">We're</span>
+        <span class="word">here</span>
+        <span class="hole"></span>
+        <span class="word">to</span>
+        <span class="word">make</span>
+        <span class="word">healty</span>
+        <span class="hole"></span>
+        <span class="word">living</span>
+        <span class="word">effortless,</span>
+        <span class="word">so</span>
+        <span class="word">you</span>
+        <span class="word">can</span>
+        <span class="hole"></span>
+        <span class="word">live</span>
+        <span class="word">longer</span>
+        <span class="word">and</span>
+        <span class="word">happier</span>
+        <span class="hole"></span>
+        <span class="word last">&nbsp;</span>
+      </div>
+    </div>
+  </body>
+</html>
